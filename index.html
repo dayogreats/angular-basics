@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<!-- initialize angular module -->
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>AngularJs Basics </title>
-
+    <title>AngularJs Starter</title>
     <!-- include angularjs framework -->
     <script src="angular.min.js" charset="utf-8"></script>
-
+    <!-- include app.js module -->
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controller.js" charset="utf-8"></script>
   </head>
-  <body ng-app>
+  <!-- add controller instruction -->
+  <body  ng-controller="mainCtrl">
 
     <input type="text"  ng-model="myMind" placeholder="What's in your mind?">
     <p>{{myMind}}</p>
